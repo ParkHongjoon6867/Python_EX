@@ -1,5 +1,9 @@
 # ex20250915_2.py
 
+#import 정보
+import time
+from datetime import datetime
+
 # 파일 읽기 정보
 fileread_nm1 = "history_1"
 filewrt_nm1 = "history_1_bak"
@@ -16,7 +20,7 @@ print("쓰기 파일 : ", filewrt_nm)
 
 find_str = ('실록','연표','고려사')
 
-print("\n=== START =============================================\n")
+print("\n=== START "+ datetime.now().strftime('%Y.%m.%d - %H:%M:%S')+" =============================================\n")
 
 with open(filewrt_nm, 'w', encoding='utf-8') as fdwrt :
     with open(fileread_nm, 'r', encoding='utf-8') as fdread :
@@ -39,5 +43,5 @@ with open(filewrt_nm, 'w', encoding='utf-8') as fdwrt :
 fdread.close
 fdwrt.close
 
-print("\n=== END =============================================\n")
+print("\n=== END "+ datetime.now().strftime('%Y.%m.%d - %H:%M:%S')+" =============================================\n")
 
