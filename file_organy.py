@@ -190,7 +190,7 @@ def file_proc():
                 str2 = fdread.readline()
                 if (not str1) or (not str2):
                     break
-                str1 = str1.replace("\n"," - ") # 개행문자 제거
+                str1 = str1.replace("\n"," - ") # 개행문자 제거와 '-'추가
                 str = str1 + str2
                 for i in range(len(find_str)):
                     if find_str[i] in str:
