@@ -23,7 +23,7 @@ find_str = ('실록','연표','고려사')
 
 search_folder = "Downloads"
 search_in = "Downloads" #찾는 대상
-search_out = ["Default","Public","TEMP","AppData"] #제외대상
+search_out = ["Default","Public","TEMP","AppData","DSA"] #제외대상 폴더 정의
 
 print("\n=== START : file_organy "+ datetime.now().strftime('%Y.%m.%d - %H:%M:%S')+" =============================================\n")
 
